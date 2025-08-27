@@ -2,11 +2,16 @@
   "name": "@network/logger",
   "version": "1.0.0",
   "description": "A Javascript cross platform network logger library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Mostafa Mahmoud <mostafamahmoudabdelaleem@gmail.com>",
   "license": "Proprietary",
   "private": false,
+  "scripts": {
+    "build": "tsup src/index.ts --dts --minify --format cjs,esm --out-dir dist --clean"
+  },
   "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.9.2"
   }
 }
