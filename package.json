@@ -7,7 +7,7 @@
   "license": "Proprietary",
   "private": false,
   "scripts": {
-    "build": "tsup src/index.ts --dts --minify --format cjs,esm --out-dir dist --clean"
+    "build": "tsup"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
